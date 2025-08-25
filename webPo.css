@@ -105,7 +105,7 @@
   }
   
   .hero-content .highlight {
-    color: #f0965a;
+    color: #e4b46c;
     font-weight: bold;
   }
   
@@ -174,13 +174,12 @@
     transform: translateY(-5px);
   }
   
-  /* 기술 리스트 */
-  .skills {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
+ .skills {
+  display: flex;
+  flex-wrap: wrap;     /* 줄바꿈 가능 */
+  gap: 2rem;           /* 아이콘 사이 간격 */
+  justify-content: center; /* 가운데 정렬 */
+}
 
   
   /* 연락 */
@@ -231,7 +230,7 @@ footer a {
 
   .about__box > div {
     flex: 1 1 300px;
-    background-color: rgba(233, 232, 216, 0.4);
+    background-color: rgba(241, 241, 233, 0.4);
     padding: 1.5rem;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.2);
@@ -344,39 +343,7 @@ footer a {
   }
 
 
-  .marquee {
-    margin-bottom: 100px;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    background: url('images/about/bg_skills.jpg') no-repeat center center / cover;
-    padding: 30px 0;
-  }
-  
-  .marquee__group {
-    display: flex;
-    animation: marquee 20s linear infinite;
-  }
-  
-  .marquee__group img {
-    height: 80px;
-    margin-right: 60px; /* 아이콘 간 간격 */
-    vertical-align: middle;
-    transition: transform 0.3s;
-  }
-  
-  .marquee__group img:hover {
-    transform: scale(1.1);
-  }
-  
-  @keyframes marquee {
-    0% {
-      transform: translateX(0%);
-    }
-    100% {
-      transform: translateX(-50%);
-    }
-  }
+
 
 
 #projects {
@@ -385,5 +352,33 @@ footer a {
   background-size: 18px 18px;
   padding: 100px 0;
 }
+
+.card-detail {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.card-detail .label {
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 4px 8px;
+  margin: 3px 4px 3px 0;
+  border-radius: 6px;
+  font-size: 13px;
+  color: #fff;
+}
+
+/* 색상 다양하게 지정 */
+.tag1 { background: #97c9a0; } /* 파랑 */
+.tag2 { background: #7e91ac; } /* 초록 */
+.tag3 { background: #eeba6d; } /* 주황 */
+.tag4 { background: #dda1e7; } /* 보라 */
+.tag5 { background: #c5869b; } /* 핑크 */
 
   
