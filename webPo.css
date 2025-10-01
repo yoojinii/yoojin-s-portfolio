@@ -66,6 +66,7 @@ section {
   margin-bottom: 260px; 
 }
 
+
 /* Hero */
 #hero {
   position: relative;
@@ -163,14 +164,6 @@ section {
 
 .card:hover {
   transform: translateY(-5px);
-}
-
-/* Skills */
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
 }
 
 /* 연락 */
